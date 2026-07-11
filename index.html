@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zuno</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.png">
+        <span>Zuno</span>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search movies or music...">
+
+    <div class="nav-right">
+        <button id="searchBtn">Search</button>
+        <button class="tab active" data-tab="movies">Movies</button>
+        <button class="tab" data-tab="music">Music</button>
+        <button class="tab" data-tab="favorites">Favorites</button>
+    </div>
+</nav>
+
+<section class="hero-slider">
+    <div class="slide active">
+        <img src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2">
+    </div>
+
+    <div class="slide">
+        <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66">
+    </div>
+
+    <button class="prev">‹</button>
+    <button class="next">›</button>
+</section>
+
+<section class="content">
+    <h2>Results</h2>
+    <div id="results"></div>
+</section>
+
+<p id="status"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
